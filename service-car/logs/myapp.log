@@ -1,0 +1,428 @@
+2024-04-18 09:55:51 -  INFO [main] --- k.s.ServiceCarApplication: Starting ServiceCarApplication using Java 21.0.2 with PID 12520 (C:\Users\admin\Desktop\LAB\java-microservices\spring-boot-microservices\service-car\target\classes started by admin in C:\Users\admin\Desktop\LAB\java-microservices\spring-boot-microservices\service-car)
+2024-04-18 09:55:51 -  INFO [main] --- k.s.ServiceCarApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 09:55:51 -  INFO [main] --- o.s.c.c.s.GenericScope: BeanFactory id=c4277ad7-8ee0-301e-8017-8698b00c6b37
+2024-04-18 09:55:51 -  INFO [main] --- o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-18 09:55:51 -  INFO [main] --- o.s.w.s.a.s.AnnotationActionEndpointMapping: Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-18 09:55:52 -  INFO [main] --- o.s.b.w.e.t.TomcatWebServer: Tomcat initialized with port(s): 8081 (http)
+2024-04-18 09:55:52 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-18 09:55:52 -  INFO [main] --- o.a.c.c.StandardService: Starting service [Tomcat]
+2024-04-18 09:55:52 -  INFO [main] --- o.a.c.c.StandardEngine: Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-18 09:55:52 -  INFO [main] --- o.a.c.c.C.[.[.[/service-car]: Initializing Spring embedded WebApplicationContext
+2024-04-18 09:55:52 -  INFO [main] --- o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 975 ms
+2024-04-18 09:55:52 - DEBUG [main] --- o.s.w.s.m.m.a.RequestMappingHandlerAdapter: ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-18 09:55:52 - DEBUG [main] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: 3 mappings in 'requestMappingHandlerMapping'
+2024-04-18 09:55:52 - DEBUG [main] --- o.s.w.s.h.SimpleUrlHandlerMapping: Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-18 09:55:52 - DEBUG [main] --- o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver: ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-18 09:55:53 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 09:55:53 -  INFO [main] --- o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 09:55:54 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 09:55:54 -  WARN [main] --- o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 09:55:54 -  INFO [main] --- o.s.c.n.e.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.s.r.a.ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Disable delta property : false
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Single vip registry refresh property : null
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Force full registry fetch : false
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Application is null : false
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Registered Applications size is zero : true
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Application version is -1: true
+2024-04-18 09:55:54 -  INFO [main] --- c.n.d.DiscoveryClient: Getting all instance registry info from the eureka server
+2024-04-18 09:55:54 - DEBUG [main] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/
+2024-04-18 09:55:55 - DEBUG [main] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:55:55 - DEBUG [main] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:55:55 - DEBUG [main] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:55:55 -  INFO [main] --- c.n.d.DiscoveryClient: The response status is 200
+2024-04-18 09:55:55 -  INFO [main] --- c.n.d.DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2024-04-18 09:55:55 -  INFO [main] --- c.n.d.InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-18 09:55:55 -  INFO [main] --- c.n.d.DiscoveryClient: Discovery Client initialized at timestamp 1713408955131 with initial instances count: 3
+2024-04-18 09:55:55 -  INFO [main] --- o.s.c.n.e.s.EurekaServiceRegistry: Registering application SERVICE-CAR with eureka with status UP
+2024-04-18 09:55:55 -  INFO [main] --- c.n.d.DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1713408955133, current=UP, previous=STARTING]
+2024-04-18 09:55:55 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8081"]
+2024-04-18 09:55:55 -  INFO [DiscoveryClient-InstanceInfoReplicator-0] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081: registering service...
+2024-04-18 09:55:55 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: HTTP POST http://192.168.47.1:8761/eureka/apps/SERVICE-CAR
+2024-04-18 09:55:55 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:55:55 -  INFO [main] --- o.s.b.w.e.t.TomcatWebServer: Tomcat started on port(s): 8081 (http) with context path '/service-car'
+2024-04-18 09:55:55 -  INFO [main] --- o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 8081
+2024-04-18 09:55:55 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Writing [InstanceInfo [instanceId = localhost:service-car:8081, appName = SERVICE-CAR, hostName = 192.168.81.1, status = UP, ipAddr = 192.168.81.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@72d63778] as "application/json"
+2024-04-18 09:55:55 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Response 204 NO_CONTENT
+2024-04-18 09:55:55 -  INFO [DiscoveryClient-InstanceInfoReplicator-0] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081 - registration status: 204
+2024-04-18 09:55:56 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 09:55:56 -  INFO [main] --- k.s.ServiceCarApplication: Started ServiceCarApplication in 6.465 seconds (process running for 7.065)
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:56:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:56:26 -  INFO [http-nio-8081-exec-1] --- o.a.c.c.C.[.[.[/service-car]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18 09:56:26 -  INFO [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Detected StandardServletMultipartResolver
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Detected AcceptHeaderLocaleResolver
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Detected FixedThemeResolver
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7685b7b4
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a2cc175
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-18 09:56:26 -  INFO [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Completed initialization in 1 ms
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:56:26 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:56:27 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:56:27 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:56:27 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:56:28 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:56:28 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:56:28 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:56:28 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:56:28 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:56:39 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:56:39 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:56:39 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:56:39 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:56:39 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:56:41 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:56:41 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:56:41 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:56:41 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:56:41 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:56:46 - DEBUG [http-nio-8081-exec-2] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:56:46 - DEBUG [http-nio-8081-exec-2] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:56:46 - DEBUG [http-nio-8081-exec-2] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:56:46 - DEBUG [http-nio-8081-exec-2] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:56:46 - DEBUG [http-nio-8081-exec-2] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:56:47 - DEBUG [http-nio-8081-exec-6] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:56:47 - DEBUG [http-nio-8081-exec-6] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:56:47 - DEBUG [http-nio-8081-exec-6] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:56:47 - DEBUG [http-nio-8081-exec-6] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:56:47 - DEBUG [http-nio-8081-exec-6] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:56:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:57:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:57:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:58:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:58:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:59:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 09:59:28 - DEBUG [http-nio-8081-exec-8] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:59:28 - DEBUG [http-nio-8081-exec-8] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:59:28 - DEBUG [http-nio-8081-exec-8] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:59:28 - DEBUG [http-nio-8081-exec-8] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:59:28 - DEBUG [http-nio-8081-exec-8] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:59:29 - DEBUG [http-nio-8081-exec-9] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 09:59:29 - DEBUG [http-nio-8081-exec-9] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 09:59:29 - DEBUG [http-nio-8081-exec-9] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 09:59:29 - DEBUG [http-nio-8081-exec-9] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 09:59:29 - DEBUG [http-nio-8081-exec-9] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 09:59:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:00:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:00:54 -  INFO [AsyncResolver-bootstrap-executor-0] --- c.n.d.s.r.a.ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:00:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:01:08 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 10:01:08 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 10:01:08 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 10:01:08 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 10:01:08 - DEBUG [http-nio-8081-exec-1] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 10:01:09 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 10:01:09 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 10:01:09 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 10:01:09 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 10:01:09 - DEBUG [http-nio-8081-exec-5] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 10:01:10 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 10:01:10 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 10:01:10 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 10:01:10 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 10:01:10 - DEBUG [http-nio-8081-exec-3] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 10:01:11 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.DispatcherServlet: GET "/service-car/api/v1/test", parameters={}
+2024-04-18 10:01:11 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: Mapped to k8sjavamicroservice.servicecar.CarController#Test()
+2024-04-18 10:01:11 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-04-18 10:01:11 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor: Writing ["Here is car-services"]
+2024-04-18 10:01:11 - DEBUG [http-nio-8081-exec-10] --- o.s.w.s.DispatcherServlet: Completed 200 OK
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:01:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:01:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:02:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:02:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:03:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:03:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:04:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:04:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:05:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:05:54 -  INFO [AsyncResolver-bootstrap-executor-0] --- c.n.d.s.r.a.ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:05:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:06:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:06:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:07:25 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713408955133
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:07:55 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:09:33 -  INFO [main] --- k.s.ServiceCarApplication: Starting ServiceCarApplication using Java 21.0.2 with PID 27520 (C:\Users\admin\Desktop\LAB\spring-microservices\service-car\target\classes started by admin in C:\Users\admin\Desktop\LAB\spring-microservices\service-car)
+2024-04-18 10:09:33 -  INFO [main] --- k.s.ServiceCarApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 10:09:33 -  INFO [main] --- o.s.c.c.s.GenericScope: BeanFactory id=c4277ad7-8ee0-301e-8017-8698b00c6b37
+2024-04-18 10:09:33 -  INFO [main] --- o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-18 10:09:33 -  INFO [main] --- o.s.w.s.a.s.AnnotationActionEndpointMapping: Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-18 10:09:34 -  INFO [main] --- o.s.b.w.e.t.TomcatWebServer: Tomcat initialized with port(s): 8081 (http)
+2024-04-18 10:09:34 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:09:34 -  INFO [main] --- o.a.c.c.StandardService: Starting service [Tomcat]
+2024-04-18 10:09:34 -  INFO [main] --- o.a.c.c.StandardEngine: Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-18 10:09:34 -  INFO [main] --- o.a.c.c.C.[.[.[/service-car]: Initializing Spring embedded WebApplicationContext
+2024-04-18 10:09:34 -  INFO [main] --- o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 881 ms
+2024-04-18 10:09:34 - DEBUG [main] --- o.s.w.s.m.m.a.RequestMappingHandlerAdapter: ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-18 10:09:34 - DEBUG [main] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: 3 mappings in 'requestMappingHandlerMapping'
+2024-04-18 10:09:34 - DEBUG [main] --- o.s.w.s.h.SimpleUrlHandlerMapping: Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-18 10:09:34 - DEBUG [main] --- o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver: ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-18 10:09:35 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 10:09:35 -  INFO [main] --- o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 10:09:36 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 10:09:36 -  WARN [main] --- o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 10:09:36 -  INFO [main] --- o.s.c.n.e.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.s.r.a.ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Disable delta property : false
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Single vip registry refresh property : null
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Force full registry fetch : false
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Application is null : false
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Registered Applications size is zero : true
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Application version is -1: true
+2024-04-18 10:09:36 -  INFO [main] --- c.n.d.DiscoveryClient: Getting all instance registry info from the eureka server
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: The response status is 200
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: Discovery Client initialized at timestamp 1713409777167 with initial instances count: 3
+2024-04-18 10:09:37 -  INFO [main] --- o.s.c.n.e.s.EurekaServiceRegistry: Registering application SERVICE-CAR with eureka with status UP
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1713409777169, current=UP, previous=STARTING]
+2024-04-18 10:09:37 -  INFO [DiscoveryClient-InstanceInfoReplicator-0] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081: registering service...
+2024-04-18 10:09:37 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:09:37 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: HTTP POST http://192.168.47.1:8761/eureka/apps/SERVICE-CAR
+2024-04-18 10:09:37 -  WARN [main] --- o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-04-18 10:09:37 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: Shutting down DiscoveryClient ...
+2024-04-18 10:09:37 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Writing [InstanceInfo [instanceId = localhost:service-car:8081, appName = SERVICE-CAR, hostName = 192.168.81.1, status = UP, ipAddr = 192.168.81.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@635a69df] as "application/json"
+2024-04-18 10:09:37 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Response 204 NO_CONTENT
+2024-04-18 10:09:37 -  INFO [DiscoveryClient-InstanceInfoReplicator-0] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081 - registration status: 204
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: Unregistering ...
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: HTTP DELETE http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:09:37 - DEBUG [main] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081 - deregister  status: 200
+2024-04-18 10:09:37 -  INFO [main] --- c.n.d.DiscoveryClient: Completed shut down of DiscoveryClient
+2024-04-18 10:09:37 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Pausing ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:09:37 -  INFO [main] --- o.a.c.c.StandardService: Stopping service [Tomcat]
+2024-04-18 10:09:37 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Stopping ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:09:37 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Destroying ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:09:37 -  INFO [main] --- o.s.b.a.l.ConditionEvaluationReportLogger: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-18 10:09:37 - ERROR [main] --- o.s.b.d.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2024-04-18 10:10:34 -  INFO [main] --- k.s.ServiceCarApplication: Starting ServiceCarApplication using Java 21.0.2 with PID 23776 (C:\Users\admin\Desktop\LAB\spring-microservices\service-car\target\classes started by admin in C:\Users\admin\Desktop\LAB\spring-microservices\service-car)
+2024-04-18 10:10:34 -  INFO [main] --- k.s.ServiceCarApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-18 10:10:34 -  INFO [main] --- o.s.c.c.s.GenericScope: BeanFactory id=c4277ad7-8ee0-301e-8017-8698b00c6b37
+2024-04-18 10:10:35 -  INFO [main] --- o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-18 10:10:35 -  INFO [main] --- o.s.w.s.a.s.AnnotationActionEndpointMapping: Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2024-04-18 10:10:35 -  INFO [main] --- o.s.b.w.e.t.TomcatWebServer: Tomcat initialized with port(s): 8081 (http)
+2024-04-18 10:10:35 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:10:35 -  INFO [main] --- o.a.c.c.StandardService: Starting service [Tomcat]
+2024-04-18 10:10:35 -  INFO [main] --- o.a.c.c.StandardEngine: Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-18 10:10:35 -  INFO [main] --- o.a.c.c.C.[.[.[/service-car]: Initializing Spring embedded WebApplicationContext
+2024-04-18 10:10:35 -  INFO [main] --- o.s.b.w.s.c.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 885 ms
+2024-04-18 10:10:35 - DEBUG [main] --- o.s.w.s.m.m.a.RequestMappingHandlerAdapter: ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-18 10:10:35 - DEBUG [main] --- o.s.w.s.m.m.a.RequestMappingHandlerMapping: 3 mappings in 'requestMappingHandlerMapping'
+2024-04-18 10:10:35 - DEBUG [main] --- o.s.w.s.h.SimpleUrlHandlerMapping: Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-18 10:10:35 - DEBUG [main] --- o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver: ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-18 10:10:36 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 10:10:36 -  INFO [main] --- o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration: Eureka HTTP Client uses RestTemplate.
+2024-04-18 10:10:37 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 10:10:37 -  WARN [main] --- o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger: Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-04-18 10:10:37 -  INFO [main] --- o.s.c.n.e.InstanceInfoFactory: Setting initial instance status as: STARTING
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Initializing Eureka in region us-east-1
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.s.r.a.ConfigClusterResolver: Resolving eureka endpoints via configuration
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Disable delta property : false
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Single vip registry refresh property : null
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Force full registry fetch : false
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Application is null : false
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Registered Applications size is zero : true
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Application version is -1: true
+2024-04-18 10:10:37 -  INFO [main] --- c.n.d.DiscoveryClient: Getting all instance registry info from the eureka server
+2024-04-18 10:10:38 - DEBUG [main] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/
+2024-04-18 10:10:38 - DEBUG [main] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:10:38 - DEBUG [main] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:10:38 - DEBUG [main] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:10:38 -  INFO [main] --- c.n.d.DiscoveryClient: The response status is 200
+2024-04-18 10:10:38 -  INFO [main] --- c.n.d.DiscoveryClient: Starting heartbeat executor: renew interval is: 30
+2024-04-18 10:10:38 -  INFO [main] --- c.n.d.InstanceInfoReplicator: InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-04-18 10:10:38 -  INFO [main] --- c.n.d.DiscoveryClient: Discovery Client initialized at timestamp 1713409838322 with initial instances count: 3
+2024-04-18 10:10:38 -  INFO [main] --- o.s.c.n.e.s.EurekaServiceRegistry: Registering application SERVICE-CAR with eureka with status UP
+2024-04-18 10:10:38 -  INFO [main] --- c.n.d.DiscoveryClient: Saw local status change event StatusChangeEvent [timestamp=1713409838324, current=UP, previous=STARTING]
+2024-04-18 10:10:38 -  INFO [DiscoveryClient-InstanceInfoReplicator-0] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081: registering service...
+2024-04-18 10:10:38 -  INFO [main] --- o.a.c.h.Http11NioProtocol: Starting ProtocolHandler ["http-nio-8081"]
+2024-04-18 10:10:38 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: HTTP POST http://192.168.47.1:8761/eureka/apps/SERVICE-CAR
+2024-04-18 10:10:38 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:10:38 -  INFO [main] --- o.s.b.w.e.t.TomcatWebServer: Tomcat started on port(s): 8081 (http) with context path '/service-car'
+2024-04-18 10:10:38 -  INFO [main] --- o.s.c.n.e.s.EurekaAutoServiceRegistration: Updating port to 8081
+2024-04-18 10:10:38 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Writing [InstanceInfo [instanceId = localhost:service-car:8081, appName = SERVICE-CAR, hostName = 192.168.81.1, status = UP, ipAddr = 192.168.81.1, port = 8081, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@72d63778] as "application/json"
+2024-04-18 10:10:38 - DEBUG [DiscoveryClient-InstanceInfoReplicator-0] --- o.s.w.c.RestTemplate: Response 204 NO_CONTENT
+2024-04-18 10:10:38 -  INFO [DiscoveryClient-InstanceInfoReplicator-0] --- c.n.d.DiscoveryClient: DiscoveryClient_SERVICE-CAR/localhost:service-car:8081 - registration status: 204
+2024-04-18 10:10:39 -  INFO [main] --- o.s.c.c.u.InetUtils: Cannot determine local hostname
+2024-04-18 10:10:39 -  INFO [main] --- k.s.ServiceCarApplication: Started ServiceCarApplication in 6.452 seconds (process running for 7.076)
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713409838324
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:11:08 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: HTTP GET http://192.168.47.1:8761/eureka/apps/delta
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: HTTP PUT http://192.168.47.1:8761/eureka/apps/SERVICE-CAR/localhost:service-car:8081?status=UP&lastDirtyTimestamp=1713409838324
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Accept=[application/json, application/*+json]
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-HeartbeatExecutor-0] --- o.s.w.c.RestTemplate: Response 200 OK
+2024-04-18 10:11:38 - DEBUG [DiscoveryClient-CacheRefreshExecutor-0] --- o.s.w.c.RestTemplate: Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
