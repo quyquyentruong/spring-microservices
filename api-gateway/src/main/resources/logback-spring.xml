@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Define the console appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- Define the output format -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %5p [%t] --- %c{1}: %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Define the file appender -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!-- Set the file to which logs will be written -->
+        <file>logs/myapp.log</file>
+        <!-- Define the output format -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %5p [%t] --- %c{1}: %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Set the root log level to INFO -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <!-- Example to increase the log level for a specific package or class -->
+    <logger name="org.springframework.web" level="DEBUG"/>
+
+</configuration>

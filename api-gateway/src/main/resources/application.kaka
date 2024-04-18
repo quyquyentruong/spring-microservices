@@ -1,0 +1,14 @@
+spring.application.name=api-gateway
+
+## Product Service Route
+spring.cloud.gateway.routes[0].id=service-order
+spring.cloud.gateway.routes[0].uri=lb://service-order
+spring.cloud.gateway.routes[0].predicates[0]=Path=/service-order/**
+
+## Order Service Route
+spring.cloud.gateway.routes[1].id=service-car
+spring.cloud.gateway.routes[1].uri=lb://service-car
+spring.cloud.gateway.routes[1].predicates[0]=Path=/service-car/**
+
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+app.eureka-server=localhost
